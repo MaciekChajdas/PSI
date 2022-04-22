@@ -10,7 +10,4 @@ class Integer(int):
         return min(self.integer, other.integer)
 
     def isPositive(self) -> bool:
-        if self.integer >= 0:
-            return True
-        else:
-            return False
+        return True if self.integer >= 0 else False
