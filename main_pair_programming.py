@@ -7,9 +7,4 @@ class Integer(int):
         return max(self.integer, other.integer)
     
     def __min__(self, other) -> int:
-        if self.integer < other.integer:
-            return self.integer
-        elif self.integer == other.integer:
-            return self.integer
-        else:
-            return other.integer
+        return min(self.integer, other.integer)
