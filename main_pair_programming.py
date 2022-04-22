@@ -4,9 +4,4 @@ class Integer(int):
         self.integer = integer
 
     def __max__(self, other) -> int:
-        if self.integer > other.integer:
-            return self.integer
-        elif self.integer == other.integer:
-            return self.integer
-        else:
-            return other.integer
+        return max(self.integer, other.integer)
