@@ -8,3 +8,9 @@ class Integer(int):
     
     def __min__(self, other) -> int:
         return min(self.integer, other.integer)
+
+    def isPositive(self) -> bool:
+        if self.integer >= 0:
+            return True
+        else:
+            return False
